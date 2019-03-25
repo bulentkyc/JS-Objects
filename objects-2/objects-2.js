@@ -89,10 +89,43 @@ let tech = {
 
 console.log(tech);
 
-//== ===
-
+//difference between == and === 
+//compare other data types
 let x = 2;
 let y = '2';
 
 console.log(x==y);
 console.log(x===y);
+
+// compare objects
+//all objects are unique
+let a = {};
+let b = {};
+console.log(a==b);
+
+//compare clonned objects
+//This is just one case for 2 objects to be equal
+let c = a;
+console.log(a==c);
+
+//Constant for Objects and other datatyper
+//constant string
+const food = 'bread';
+//food = 'soup';
+console.log(food);
+
+//constant object
+const lunch = {
+    fruit: 'apple'
+}
+
+//update property
+lunch.fruit = 'banana';
+console.log(lunch);
+
+//re-set variable
+/*lunch = {
+    fruit: 'water meloon'
+}
+*/
+console.log(lunch);
